@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title>Mplayer | Home</title>
+  </head>
+  <body>
+    <header></header>
+    <div id="page_view">
+      <div id="left_view">
+        <div id="misen_data1">
+          <div id="md_title">Misen Players' last 3 positions:</div>
+          <div id="md_players"></div>
+        </div>
+      </div>
+      <div id="main_view">
+        <div class="nav_btns">
+          <button type="button" id="menu_btn1">Update M-Player</button>
+          <button type="button" id="menu_btn3">Train M-Player</button>
+          <button type="button" id="menu_btn2">Predict M-Player</button>
+        </div>
+        <div id="mplayer_update">
+          <h2>Misen Update</h2>
+          <div class="misen_options">
+            <button class="options_menu" id="upd_optionA">Alfa</button>
+            <button class="options_menu" id="upd_optionB">Bravo</button>
+            <button class="options_menu" id="upd_optionC">Charlie</button>
+            <button class="options_menu" id="upd_optionD">Delta</button>
+            <button class="options_menu" id="upd_optionE">Echo</button>
+            <button class="options_menu" id="upd_optionF">Foxtrot</button>
+            <form id="update_form">
+              <select
+                id="update_list"
+                type="text"
+                name="mplayer"
+                class="mp_name"
+              ></select>
+              <button id="update_btn" type="button">Update</button>
+              <button id="rollback_btn" type="button">Rollback</button>
+            </form>
+            <div id="update_status"></div>
+          </div>
+          <div id="update_group"></div>
+        </div>
+        <div id="mplayer_train">
+          <h2>M-Player Training</h2>
+          <div class="misen_options">
+            <button class="options_menu" id="trn_optionA">Alfa</button>
+            <button class="options_menu" id="trn_optionB">Bravo</button>
+            <button class="options_menu" id="trn_optionC">Charlie</button>
+            <button class="options_menu" id="trn_optionD">Delta</button>
+            <button class="options_menu" id="trn_optionE">Echo</button>
+            <button class="options_menu" id="trn_optionF">Foxtrot</button>
+          </div>
+          <form id="train_form">
+            <select id="train_list" type="text" name="mplayer" class="mp_name"> </select>
+            <button id="train_btn" type="button">Trainer</button>
+            <button id="xtrain_btn" type="button">X-Trainer</button>
+          </form>
+          <div id="prev_train"></div>
+          <div id="train_timer"></div>
+        </div>
+        <div id="mplayer_predict">
+          <h2>M-Player Predict</h2>
+          <div class="misen_options">
+            <button class="options_menu" id="prd_optionA">Alfa</button>
+            <button class="options_menu" id="prd_optionB">Bravo</button>
+            <button class="options_menu" id="prd_optionC">Charlie</button>
+            <button class="options_menu" id="prd_optionD">Delta</button>
+            <button class="options_menu" id="prd_optionE">Echo</button>
+            <button class="options_menu" id="prd_optionF">Foxtrot</button>
+          </div>
+          <form id="predict_form">
+            <select id="predict_list" type="text" name="getplayer" class="mp_name">
+            </select>
+            <button id="predict_btn" class="pred_btn" type="button">
+              PREDICT
+            </button>
+            <input type="checkbox" name="recResult" />REC
+          </form>
+          <div class="dis_wrapper2">
+            <div class="wrapper1">
+              <div class="predfix">01</div>
+              <div id="aaa" class="pred_display"></div>
+              <div class="members">1 2 3</div>
+            </div>
+            <div class="wrapper1">
+              <div class="predfix">02</div>
+              <div id="bbb" class="pred_display"></div>
+              <div class="members">4 5 6</div>
+            </div>
+            <div class="wrapper1">
+              <div class="predfix">03</div>
+              <div id="ccc" class="pred_display"></div>
+              <div class="members">7 8 9</div>
+            </div>
+            <div class="wrapper1">
+              <div class="predfix">04</div>
+              <div id="ddd" class="pred_display"></div>
+              <div class="members">10 11 12</div>
+            </div>
+          </div>
+          <div class="dis_wrapper2">
+            <div class="wrapper1">
+              <div class="predfix">05</div>
+              <div id="aaa2" class="pred_display"></div>
+              <div class="members">12 1 2</div>
+            </div>
+            <div class="wrapper1">
+              <div class="predfix">06</div>
+              <div id="bbb2" class="pred_display"></div>
+              <div class="members">3 4 5</div>
+            </div>
+            <div class="wrapper1">
+              <div class="predfix">07</div>
+              <div id="ccc2" class="pred_display"></div>
+              <div class="members">6 7 8</div>
+            </div>
+            <div class="wrapper1">
+              <div class="predfix">08</div>
+              <div id="ddd2" class="pred_display"></div>
+              <div class="members">9 10 11</div>
+            </div>
+          </div>
+          <div class="dis_wrapper2">
+            <div class="wrapper1">
+              <div class="predfix">09</div>
+              <div id="aaa3" class="pred_display"></div>
+              <div class="members">11 12 1</div>
+            </div>
+            <div class="wrapper1">
+              <div class="predfix">10</div>
+              <div id="bbb3" class="pred_display"></div>
+              <div class="members">2 3 4</div>
+            </div>
+            <div class="wrapper1">
+              <div class="predfix">11</div>
+              <div id="ccc3" class="pred_display"></div>
+              <div class="members">5 6 7</div>
+            </div>
+            <div class="wrapper1">
+              <div class="predfix">12</div>
+              <div id="ddd3" class="pred_display"></div>
+              <div class="members">8 9 10</div>
+            </div>
+          </div>
+          <div id="pred_status">
+            <div id="lastTrn_title">Last Training:</div>
+            <div id="lastTrn_date"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./options.js"></script>
+    <script src="./predict.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
